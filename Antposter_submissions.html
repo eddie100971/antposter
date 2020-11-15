@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta name="description" content="AntPoster Submissions">
+        <title>AntPoster!(Submissions)</title>
+        <style>
+            .header{
+                text-align: center;
+            }
+            h2{
+                text-align: center;
+            }
+            h4{
+                text-align: center;
+            }
+            .center{
+                text-align: center;
+                list-style-position: inside;
+            }
+            textarea{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            #truthbutton{
+                font-size: 12px;
+                text-align:center;
+            }
+            #liebutton{
+                font-size: 12px;
+                text-align:center;
+            }
+            .buttons{
+                text-align: center;
+            }
+            .return_button{
+                border: none;
+                color: white;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                cursor: pointer;
+            }
+            .return_button1 {
+                background-color: midnightblue;
+            }
+        </style>
+        <script>
+            var textarea = document.getElementById("truthinput");
+            textarea.addEventListener("keyup", function(event){
+                if(event.keycode === 13){
+                    event.preventDefault();
+                    document.getElementById("truthbutton".click());
+                }
+            })
+
+        </script>
+    </head>
+    
+    <body style="background-color:lightblue;">
+        <!-- submission page body-->
+        <!-- needs 2 text areas that can accept input-->
+        <!-- needs 3 buttons. 1 to submit and refresh each text box, 1 to go back to main page-->
+        <header class="header">
+            <h1 style="color: lightcoral">AntPoster!</h1>
+            <p><b>UCI's 2 Truths - 1 Lie game</b></p>
+        </header>
+        <main>
+            <h2> Antposter Submission Rules </h2>
+            <ol class="center">
+                <li>Only submit 1 Truth or 1 Lie at a Time!</li>
+                <li>Please submit appropriate truths/lies. No racism, sexism, or slander.</li>
+                <li>Have fun!</li>
+            </ol>
+            
+            <h4> Truth Submissions</h4>
+            <textarea class="center" class="buttons" id="truthinput" rows="5" cols="50">
+
+            </textarea>
+            <div class="buttons">
+                <button id="truthbutton" onclick="javascript:alert('Hello')">Submit</button>
+            </div>
+            <br/>
+            <h4> Lie Submissions</h4>
+            <textarea class="center" id="lieinput" rows="5" cols="50">
+            </textarea>
+
+            <div class="buttons">
+                <button id="liebutton" class="buttons" onclick="javascript:alert('Hello')">Submit</button>     
+            </div> 
+            <br/>
+            <div class="buttons">
+                <a href="Antposter_main.html"><button class="return_button return_button1">Back to Main Page</button></a>
+            </div>
+            <br/>
+            
+        </main>
+        <footer>
+
+        </footer>
+    </body>
+</html>
