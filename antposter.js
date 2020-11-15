@@ -14,6 +14,10 @@ function getRandTruth1() {
   document.getElementById("true_1").value = new_truth;
 }
 
+document.getElementById("true_2").onload = function() {
+  this.textContent = "Lol xd";
+}
+
 
 function postTruth() {
     var truth = document.getElementById("truthinput").value;
