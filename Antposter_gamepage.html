@@ -36,7 +36,7 @@
         <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
         <script src="antposter.js"></script>
     </head>
-    <body style="background-color:lightblue;">
+    <body style="background-color:lightblue;" onload="getRandTruth1()">
         <header>
             <h1 style="color: lightcoral">AntPoster!</h1>
             <p><b>UCI's 2 Truths - 1 Lie game</b></p>
@@ -46,10 +46,10 @@
         <main>
             <div>
                 <img height="150" class="images" src="https://www.seekpng.com/png/small/776-7764165_uci-peter-the-anteater-sticker.png" alt="Anteater Picture" style="margin:10px 10px"/>
-                <button class="button button2" text=getRandTruth()></button>
+                <button class="button button2" id="true_1"></button>
                 <br/>
                 <img height="150" class="images" src="https://www.seekpng.com/png/small/776-7764165_uci-peter-the-anteater-sticker.png" alt="Anteater Picture" style="margin:10px 10px"/>
-                <button class="button button3">Lie/Truth 2</button>
+                <button class="button button3" id="getRandTruth()"></button>
                 <br/>
                 <img height="150" class="images" src="https://www.seekpng.com/png/small/776-7764165_uci-peter-the-anteater-sticker.png" alt="Anteater Picture" style="margin:10px 10px"/>
                 <button class="button button4" position="fixed">Lie/Truth 3</button>

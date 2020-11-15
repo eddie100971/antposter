@@ -8,10 +8,12 @@ var lie_list = ["UCI is the number 1 public school.", "UCI is located in NorCal.
                 "The AntHill is the UCI bookstore.", "UCI has no Computer Science major.", "The original Petr dropper is still attending UCI.",
                 "The most popular club in UCI is UCI Dragonboat.", "I am petr."]
 
-function getRandTruth() {
+function getRandTruth1() {
   var random_truth = Math.floor((Math.random() * truths) + 1);
-  return truth_list[random_truth];
+  var new_truth = truth_list[random_truth];
+  document.getElementById("true_1").value = new_truth;
 }
+
 
 function postTruth() {
     var truth = document.getElementById("truthinput").value;
